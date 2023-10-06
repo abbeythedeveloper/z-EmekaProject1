@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #202227;
+}
+
+.nav-link{
+  @apply bg-[#43464d] px-2 py-1 rounded-md
+}
+.active{
+  @apply bg-[#5871EB]
+}
