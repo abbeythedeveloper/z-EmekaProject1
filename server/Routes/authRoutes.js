@@ -8,14 +8,14 @@ const { test, registerUser, loginUser, getProfile} = require('../controllers/aut
 router.use(
     cors({
         credentials: true,
-        origin: 'http://localhost:5173' // <-- location of the react app were connecting to
+        origin: 'https://z-emeka-project.vercel.app/' // <-- location of the react app were connecting to
         })
 )
 
 router.get('/', test)
 router.post('/register',registerUser)
 router.post('/login',loginUser)
-router.get(getProfile)
+router.get('/profile',getProfile)
 
 router.get('/login/success', (req, res) => {
     if (req.user) {
