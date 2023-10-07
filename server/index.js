@@ -33,7 +33,7 @@ app.use(passport.session());
 
 app.use(
     cors({
-        origin:'http://localhost:5173' ,  //allow to access from this origin only
+        origin:'http://z-emeka-project.vercel.app' ,  //allow to access from this origin only
         methods: 'GET,POST,PUT,DELETE',
         credentials: true
     })
