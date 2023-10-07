@@ -11,6 +11,8 @@ useEffect(() => {
         axios.get('/profile').then(({data}) => {
             setUser(data)
         })
+    } else {
+        setUser(null)
     }
 }, []);
 
