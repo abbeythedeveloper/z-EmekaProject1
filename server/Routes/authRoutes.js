@@ -7,6 +7,7 @@ const { test, registerUser, loginUser, getProfile} = require('../controllers/aut
 //middleware
 router.use(
     cors({
+        methods: 'GET,POST,PUT,DELETE',
         credentials: true,
         origin: 'https://z-emeka-project.vercel.app' // <-- location of the react app were connecting to
         })
