@@ -8,7 +8,7 @@ const { test, registerUser, loginUser, getProfile} = require('../controllers/aut
 router.use(
     cors({
         credentials: true,
-        origin: 'https://z-emeka-project.vercel.app/' // <-- location of the react app were connecting to
+        origin: 'https://z-emeka-project.vercel.app' // <-- location of the react app were connecting to
         })
 )
 
