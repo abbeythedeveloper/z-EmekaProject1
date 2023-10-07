@@ -16,12 +16,9 @@ useEffect(() => {
     }
 }, []);
 
-const logout = () => {
-    setUser(null)
-}
 
     return (
-    <UserContext.Provider value={{user, logout}}>
+    <UserContext.Provider value={{user,setUser}}>
         {children}
     </UserContext.Provider>
     )

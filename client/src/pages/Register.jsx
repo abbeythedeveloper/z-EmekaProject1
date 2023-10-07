@@ -56,12 +56,6 @@ const Register = () => {
 }
   };
 
-  const googleAuth = () => {
-    window.open(
-      `${process.env.BACKEND_URL}/auth/google/callback`,
-      '_self'
-    )
-  }
 
   return (
     <div className="flex flex-row mx-auto mt-5 md:mt-16 space-x-32 h-[500px] justify-between">
@@ -89,7 +83,7 @@ const Register = () => {
         <p className="text-xs md:text-base">Or</p>
         <hr className="w-32 md:w-52"/>
       </div>
-        <button onClick={googleAuth} className="flex py-2 text-sm space-x-2 justify-center items-center rounded-md bg-black w-full">
+        <button className="flex py-2 text-sm space-x-2 justify-center items-center rounded-md bg-black w-full">
       <img src={googleLogo} className="mr-4"/>
         Sign in with google
       </button>

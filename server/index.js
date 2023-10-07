@@ -4,8 +4,6 @@ const cors = require('cors')
 const { mongoose } = require('mongoose')
 const cookieParser = require('cookie-parser')
 const cookieSession = require('cookie-session')
-const passport = require('passport');
-const passportSetup = require('./passport')
 // const authRoute = require('./Routes/authRoutes')
 
 const app = express();
@@ -28,14 +26,12 @@ app.use(cookieSession({
     maxAge:24*60*60*100,
 })
 );
-app.use(passport.initialize());
-app.use(passport.session());
 
 app.use(
     cors({
         origin:'https://z-emeka-project.vercel.app' ,  //allow to access from this origin only
-        // methods: 'GET,POST,PUT,DELETE',
-        // credentials: true
+        methods: 'GET,POST,PUT,DELETE',
+        credentials: true
     })
 );
 // Enable CORS for your frontend domain
