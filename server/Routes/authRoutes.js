@@ -15,7 +15,7 @@ router.use(
 router.get('/', test)
 router.post('/register',registerUser)
 router.post('/login',loginUser)
-router.get('/profile',getProfile)
+router.get(getProfile)
 
 router.get('/login/success', (req, res) => {
     if (req.user) {
