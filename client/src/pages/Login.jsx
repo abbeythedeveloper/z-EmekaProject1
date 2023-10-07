@@ -8,7 +8,7 @@ import { motion } from 'framer-motion'
 import { googleLogo, img1 } from "../assets/images"
 
 const Login = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const [data, setData] = useState({
     email: '',
     password: '',
