@@ -10,7 +10,7 @@ import axios from 'axios'
 import { Toaster } from 'react-hot-toast'
 import { UserContextProvider } from '../context/userContext'
  
-axios.defaults.baseURL = 'http://z-emeka-project1-api.vercel.app/';
+axios.defaults.baseURL = 'https://z-emeka-project1-api.vercel.app/';
 axios.defaults.withCredentials = true
 
 function App() {
